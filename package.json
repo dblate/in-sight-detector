@@ -1,0 +1,22 @@
+{
+  "name": "in-sight-detector",
+  "title": "in-sight-detector",
+  "description": "DOM in sight detector",
+  "version": "1.0.0",
+  "main": "./in-sight-detector.js",
+  "author": {
+    "name": "2222bnting"
+  },
+  "keywords": [
+    "DOM",
+    "javascript",
+    "html"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "doc": "make doc"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^4.0.1"
+  }
+}
