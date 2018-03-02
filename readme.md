@@ -6,7 +6,7 @@
 
 那么你可能就需要 in-sight-detector.js，一个用来动态检测某些 DOM 元素是否处于浏览器窗口内的探测器。
 
-你可以用来：
+可以用来：
 
 * 处理图片惰性加载
 * 统计某些动态变化的元素的 pv
@@ -36,7 +36,7 @@
 
 <h3>文档</h3>
 
-(in-sight-detector.md)[]
+[in-sight-detector.md](https://github.com/dblate/in-sight-detector/blob/master/docs/in-sight-detector.md)
 
 <h3>一些想法</h3>
 
