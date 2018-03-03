@@ -28,9 +28,6 @@
 
 ### new InSightDetector([options])
 构造函数
-（整个函数是在页面滑动过程中执行，虽然已经做了一些处理尽量减少给浏览器带来的卡顿，
-但仍不建议在回调函数中做太耗性能的操作，比如 DOM 元素修改。
-当然，设置较大的 interval 值能为我们执行复杂操作争取时间）
 
 
 | Param | Type | Description |
