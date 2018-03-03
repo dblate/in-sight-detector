@@ -2,10 +2,15 @@
   "name": "in-sight-detector",
   "title": "in-sight-detector",
   "description": "DOM in sight detector",
-  "version": "1.0.0",
-  "main": "./in-sight-detector.js",
+  "version": "1.0.1",
+  "main": "./dist/in-sight-detector.js",
+  "homepage": "https://github.com/dblate/in-sight-detector",
   "author": {
     "name": "2222bnting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dblate/in-sight-detector.git"
   },
   "keywords": [
     "DOM",
@@ -17,6 +22,13 @@
     "doc": "make doc"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^7.0.0",
+    "grunt-browserify": "^5.2.0",
     "jsdoc-to-markdown": "^4.0.1"
   }
 }

@@ -9,9 +9,32 @@
 可以用来：
 
 * 处理图片惰性加载
-* 统计某些动态变化的元素的 pv
+* 统计某些动态变化的元素的展现量
+
 
 <h3>快速使用</h3>
+
+<h4>获取代码</h4>
+
+github 只是用来存放源码，如果想要获取生产环境所需的代码，可以通过以下两种形式：
+
+* npm
+
+```javascript
+  npm install in-sight-detector
+```
+
+* 本地编译
+
+```
+git clone https://github.com/dblate/in-sight-detector.git
+npm install
+grunt
+```
+
+grunt 执行完后在 dist 目录下有编译完成的代码
+
+<h4>使用示例</h4>
 
 ```javascript
     import InSightDetector from 'in-sight-detector'
@@ -28,15 +51,13 @@
     });
 ```
 
-<h3>npm</h3>
-
-```javascript
-  npm install in-sight-detector
-```
-
 <h3>文档</h3>
 
 [in-sight-detector.md](https://github.com/dblate/in-sight-detector/blob/master/docs/in-sight-detector.md)
+
+<h3>兼容性</h3>
+
+使用了 addEventListener 和 requestAnimationFrame，pc 端不兼容 IE，移动端没问题
 
 <h3>一些想法</h3>
 
