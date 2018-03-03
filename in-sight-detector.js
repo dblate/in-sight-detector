@@ -46,6 +46,10 @@ class InSightDetector {
     }
 
     _normalize(options) {
+        if (typeof options !== 'object') {
+            options = {};
+        }
+
         return {
             interval: options.interval || 0,
             offset: options.offset || 0
