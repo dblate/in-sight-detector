@@ -2,7 +2,7 @@
   "name": "in-sight-detector",
   "title": "in-sight-detector",
   "description": "DOM in sight detector",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./dist/in-sight-detector.js",
   "homepage": "https://github.com/dblate/in-sight-detector",
   "author": {

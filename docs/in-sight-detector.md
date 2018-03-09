@@ -20,8 +20,8 @@
 
 * [InSightDetector](#InSightDetector)
     * [new InSightDetector([options])](#new_InSightDetector_new)
-    * [.addListener(el, callback)](#InSightDetector+addListener)
-    * [.removeListener(el)](#InSightDetector+removeListener)
+    * [.addListener(els, callback)](#InSightDetector+addListener)
+    * [.removeListener(els)](#InSightDetector+removeListener)
     * [.removeAllListeners()](#InSightDetector+removeAllListeners)
 
 <a name="new_InSightDetector_new"></a>
@@ -38,26 +38,26 @@
 
 <a name="InSightDetector+addListener"></a>
 
-### inSightDetector.addListener(el, callback)
+### inSightDetector.addListener(els, callback)
 增加待检测的元素和对应的回调函数，每次新增元素时，会立即检测一次
 
 **Kind**: instance method of [<code>InSightDetector</code>](#InSightDetector)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| el | <code>Element</code> | 新增的元素 |
+| els | <code>Element</code> \| <code>Array</code> | 新增的元素，单个元素或数组 |
 | callback | <code>function</code> | 该元素处理视口区域时的回调 |
 
 <a name="InSightDetector+removeListener"></a>
 
-### inSightDetector.removeListener(el)
+### inSightDetector.removeListener(els)
 删除指定元素及其回调函数
 
 **Kind**: instance method of [<code>InSightDetector</code>](#InSightDetector)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| el | <code>Element</code> | 待删除的元素 |
+| els | <code>Element</code> \| <code>Array</code> | 待删除的元素，单个元素或数组 |
 
 <a name="InSightDetector+removeAllListeners"></a>
 

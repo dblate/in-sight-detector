@@ -142,32 +142,40 @@ class InSightDetector {
     /**
      * 增加待检测的元素和对应的回调函数，每次新增元素时，会立即检测一次
      *
-     * @param {Element} el 新增的元素
+     * @param {Element|Array} els 新增的元素，单个元素或数组
      * @param {Function} callback 该元素处理视口区域时的回调
      */
-    addListener(el, callback = function () {}) {
-        if (isEl(el)) {
-            if (!this._store.length) {
-                window.addEventListener('scroll', this._throttledDetect)
-            }
+    addListener(els, callback = function () {}) {
+        els = [].concat(els);
 
-            this._store.push({el, callback});
-            this._throttledDetect(el);
-        }
+        els.forEach(el => {
+            if (isEl(el)) {
+                if (!this._store.length) {
+                    window.addEventListener('scroll', this._throttledDetect)
+                }
+
+                this._store.push({el, callback});
+                this._throttledDetect(el);
+            }
+        });
     }
 
     /**
      * 删除指定元素及其回调函数
      *
-     * @param {Element} el 待删除的元素
+     * @param {Element|Array} els 待删除的元素，单个元素或数组
      */
-    removeListener(el) {
-        if (isEl(el)) {
-            this._store = this._store.filter(value => !value.el.isSameNode(el));
+    removeListener(els) {
+        els = [].concat(els);
 
-            if (!this._store.length) {
-                window.removeEventListener('scroll', this._throttledDetect);
+        els.forEach(el => {
+            if (isEl(el)) {
+                this._store = this._store.filter(value => !value.el.isSameNode(el));
             }
+        });
+
+        if (!this._store.length) {
+            window.removeEventListener('scroll', this._throttledDetect);
         }
     }
 
