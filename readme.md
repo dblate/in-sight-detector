@@ -61,9 +61,7 @@ grunt 执行完后在 dist 目录下有编译完成的代码
     });
 
     // 同时为多个元素取消事件
-    detector.removeListener([el0, el1, el2], () => {
-        console.log('Unbind multiple elements at the same time');
-    });
+    detector.removeListener([el0, el1, el2]);
 
     // 移除所有元素及其事件
     detector.removeAllListener();
